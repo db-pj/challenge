@@ -10,21 +10,32 @@
 		  function drawMyChart() {
 			var mychart = new AwesomeChart( 'db2014' );
 			var results = {
-				'Kevin'		: 15,
-				'Ryan'		: 8,
-				'PJ'		: 7,
-				'Roberto'	: 6,
+				'Kevin'		: 16,
+				'PJ'		: 11,
+				'Ryan'		: 10,
+				'Roberto'	: 8,
+				'Javier'	: 6,
 				'Hayley'	: 5,
-				'Kent'		: 4,
-				'Javier'	: 4,
-				'Levi'		: 3,
-				'Anne'		: 3,
-				'Margarett' : 2,
-				'Dave'		: 1,
+				'Kent'		: 5,
+				'Levi'		: 4,
+				'Anne'		: 4,
+				//'Margarett' : 2,
+				//'Dave'		: 1,
 				'Steven'	: 1,
-				'Katie'		: 0,
 			};
-			//Last Updated: Aug 4-8
+
+			var resultsRandom = {
+				'PJ'		: 4,
+				'Kevin'		: 1,
+				'Ryan'		: 1,
+				'Roberto'	: 1,
+				'Javier'	: 1,
+				'Kent'		: 1,
+				'Levi'		: 1,
+				'Anne'		: 1,
+				'Hayley'	: 0,
+				'Steven'	: 0,
+			}
 
 			mychart.title = "Digital Brands Office Challenge Winners - 2014"
 			jQuery.each( results, function ( name, result ) {
