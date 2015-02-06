@@ -1,0 +1,40 @@
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<title>Digital Brands Office Challenge Winners - 2015</title>
+		<link rel="stylesheet" type="text/css" href="../lib/style.css" media="all">
+		<link rel="icon" type="image/x-icon" href="../lib/favicon.ico" />
+		<script type="application/javascript" src="../lib/awesomechart.js"></script>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script type="application/javascript">
+		  function drawMyChart() {
+			var mychart = new AwesomeChart( 'db2015' );
+			var results = {
+				'Ryan'		: 2,
+				'Hayley'	: 2,
+				'PJ'		: 1,
+				'Jacob'     : 1,
+				'Levi'		: 1,
+				'Anne'		: 1,
+				'Roberto'	: 0,
+				'Javier'	: 0,
+				'Kent'		: 0,
+				'Steven'	: 0,
+				'Lindsey'   : 0,
+				'Ali'       : 0,
+			};
+
+			mychart.title = "Digital Brands Office Challenge Winners - 2015"
+			jQuery.each( results, function ( name, result ) {
+				mychart.data.push( result );
+				mychart.labels.push( name );
+			});
+			mychart.draw();
+		  }
+		  window.onload = drawMyChart;
+		</script>
+	</head>
+	<body>
+		<canvas id="db2015" width="1400" height="600"></canvas>
+	</body>
+</html>
